@@ -12,26 +12,18 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="app" aria-labelledby="app-title">
-      <section class="play-area">
-        <div class="status" aria-live="polite">
-          <p class="eyebrow">Coin Toss</p>
-          <h1 id="app-title">長押しして、離す</h1>
-          <p id="resultText" class="result-text">コインを押すと回転します</p>
-        </div>
-
-        <button id="coinButton" class="coin-button" type="button" aria-label="コイントスを開始">
-          <span id="coin" class="coin" aria-hidden="true">
-            <span class="coin__edge"></span>
-            <span class="coin__face coin__face--heads">
-              <span class="coin__mark">表</span>
-            </span>
-            <span class="coin__face coin__face--tails">
-              <span class="coin__mark">裏</span>
-            </span>
+    <main class="app">
+      <button id="coinButton" class="coin-button" type="button" aria-label="コイントスを開始">
+        <span id="coin" class="coin" aria-hidden="true">
+          <span class="coin__edge"></span>
+          <span class="coin__face coin__face--heads">
+            <span class="coin__mark">表</span>
           </span>
-        </button>
-      </section>
+          <span class="coin__face coin__face--tails">
+            <span class="coin__mark">裏</span>
+          </span>
+        </span>
+      </button>
     </main>
 
     <script src="app.js" defer></script>

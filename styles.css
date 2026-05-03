@@ -1,9 +1,6 @@
 :root {
   color-scheme: dark;
   --bg: #0d1117;
-  --panel: #151b23;
-  --text: #f0f6fc;
-  --muted: #8b949e;
   --gold-1: #fff4b8;
   --gold-2: #f4c84f;
   --gold-3: #b87812;
@@ -26,7 +23,6 @@ body {
   background:
     radial-gradient(circle at 50% 18%, rgba(88, 166, 255, 0.18), transparent 34rem),
     linear-gradient(180deg, #101720 0%, var(--bg) 70%);
-  color: var(--text);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   touch-action: none;
@@ -42,44 +38,6 @@ button {
   min-height: 100dvh;
   padding: max(24px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(28px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
   place-items: center;
-}
-
-.play-area {
-  display: grid;
-  width: min(100%, 520px);
-  min-height: min(760px, calc(100dvh - 56px));
-  grid-template-rows: auto 1fr;
-  gap: clamp(28px, 6vh, 72px);
-  align-items: center;
-}
-
-.status {
-  min-height: 160px;
-  text-align: center;
-}
-
-.eyebrow {
-  margin: 0 0 14px;
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-
-h1 {
-  margin: 0;
-  font-size: clamp(2.4rem, 12vw, 5.25rem);
-  line-height: 0.95;
-  letter-spacing: 0;
-}
-
-.result-text {
-  min-height: 1.8rem;
-  margin: 22px 0 0;
-  color: var(--muted);
-  font-size: clamp(1rem, 4vw, 1.25rem);
-  font-weight: 700;
 }
 
 .coin-button {
@@ -180,13 +138,8 @@ h1 {
 }
 
 @media (max-height: 660px) {
-  .play-area {
-    gap: 20px;
-    min-height: calc(100dvh - 40px);
-  }
-
-  .status {
-    min-height: 124px;
+  .coin-button {
+    width: min(62vh, 76vw, 340px);
   }
 }
 

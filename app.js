@@ -1,6 +1,5 @@
 const coinButton = document.querySelector("#coinButton");
 const coin = document.querySelector("#coin");
-const resultText = document.querySelector("#resultText");
 
 const state = {
   angle: 0,
@@ -15,11 +14,6 @@ const state = {
   activePointerId: null,
 };
 
-const labels = {
-  heads: "表",
-  tails: "裏",
-};
-
 function setCoinAngle(angle) {
   coin.style.transform = `rotateY(${angle}deg)`;
 }
@@ -30,10 +24,6 @@ function normalizeAngle(angle) {
 
 function easeOutCubic(t) {
   return 1 - Math.pow(1 - t, 3);
-}
-
-function setResultText(text) {
-  resultText.textContent = text;
 }
 
 function animationLoop(time) {
@@ -64,8 +54,7 @@ function animationLoop(time) {
       state.speed = 0;
       coinButton.classList.remove("is-spinning");
       setCoinAngle(state.angle);
-      setResultText(`${labels[state.landingSide]}で止まりました`);
-      coinButton.setAttribute("aria-label", `結果は${labels[state.landingSide]}。もう一度コイントスを開始`);
+      coinButton.setAttribute("aria-label", "もう一度コイントスを開始");
     }
   }
 
@@ -82,7 +71,6 @@ function startHolding(pointerId = null) {
   state.lastTime = 0;
   state.activePointerId = pointerId;
   coinButton.classList.add("is-holding", "is-spinning");
-  setResultText("回転中...");
   coinButton.setAttribute("aria-label", "指を離してコイントス");
 }
 
@@ -106,7 +94,6 @@ function releaseCoin() {
   state.landingSide = side;
   state.activePointerId = null;
   coinButton.classList.remove("is-holding");
-  setResultText("減速中...");
 }
 
 coinButton.addEventListener("pointerdown", (event) => {
