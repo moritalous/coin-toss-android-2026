@@ -54,6 +54,9 @@ npm run twa:init
 ```powershell
 npm run twa:build
 npm run twa:update
+npm run twa:fingerprint:key
+npm run twa:fingerprint:add -- "<SHA-256 fingerprint>"
+npm run twa:fingerprint:list
 npm run twa:assetlinks
 ```
 

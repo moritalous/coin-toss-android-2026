@@ -12,6 +12,9 @@
     "twa:init": "mise exec -- bubblewrap init --manifest=\"https://moritalous.github.io/coin-toss-android-2026/manifest.webmanifest\" --directory=\"android\"",
     "twa:build": "mise exec -- bubblewrap build --manifest=\"android/twa-manifest.json\"",
     "twa:update": "mise exec -- bubblewrap update --manifest=\"android/twa-manifest.json\"",
+    "twa:fingerprint:key": "mise exec -- keytool -list -v -keystore android/android.keystore -alias android",
+    "twa:fingerprint:add": "mise exec -- bubblewrap fingerprint add --manifest=\"android/twa-manifest.json\"",
+    "twa:fingerprint:list": "mise exec -- bubblewrap fingerprint list --manifest=\"android/twa-manifest.json\"",
     "twa:assetlinks": "mise exec -- bubblewrap fingerprint generateAssetLinks --manifest=\"android/twa-manifest.json\" --output=\".well-known/assetlinks.json\""
   },
   "devDependencies": {
