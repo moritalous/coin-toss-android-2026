@@ -4,6 +4,7 @@ output/
 .DS_Store
 android/android.keystore
 android/app-release-signed.apk
+android/app-release-signed.apk.idsig
 android/app-release-bundle.aab
 android/app-release-unsigned-aligned.apk
 android/build/
