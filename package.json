@@ -1,0 +1,13 @@
+{
+  "name": "coin-toss-android-2026",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A simple coin toss PWA for Android publishing via Trusted Web Activity.",
+  "scripts": {
+    "start": "npx http-server . -p 4173 -c-1",
+    "serve": "npx http-server . -p 4173 -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

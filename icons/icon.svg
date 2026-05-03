@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0d1117"/>
+  <circle cx="256" cy="256" r="174" fill="#d99d24"/>
+  <circle cx="256" cy="256" r="148" fill="#f4c84f"/>
+  <circle cx="214" cy="190" r="58" fill="#fff4b8" opacity=".72"/>
+  <circle cx="256" cy="256" r="116" fill="none" stroke="#7b4b08" stroke-width="18" opacity=".55"/>
+  <text x="256" y="314" fill="#5a3505" font-family="Arial, sans-serif" font-size="154" font-weight="900" text-anchor="middle">表</text>
+</svg>

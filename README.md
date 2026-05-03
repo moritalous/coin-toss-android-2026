@@ -1,1 +1,44 @@
-# coin-toss-android-2026
+# Coin Toss Android 2026
+
+シンプルなコイントスPWAです。画面上のコインを長押しすると回転し、指を離すと徐々に減速して表か裏で止まります。
+
+## 公開URL
+
+GitHub Pagesで公開すると、URLは次の形式になります。
+
+```text
+https://moritalous.github.io/coin-toss-android-2026/
+```
+
+## ローカル起動
+
+```powershell
+npm install
+npm start
+```
+
+ブラウザで `http://localhost:4173` を開きます。
+
+## GitHub Pages公開
+
+このリポジトリは `.github/workflows/pages.yml` でGitHub Pagesへ自動デプロイする設定です。
+
+初回だけGitHubで次の設定を確認します。
+
+1. Repository Settings を開く
+2. Pages を開く
+3. Build and deployment の Source を `GitHub Actions` にする
+4. `main` ブランチへpushする
+
+デプロイ状況はGitHubの Actions タブで確認できます。
+
+## Google Play公開の想定
+
+このリポジトリはPWA本体です。Google Playへ出す場合は、公開済みHTTPS URLを用意したうえで Trusted Web Activity として Android アプリ化します。
+
+一般的な流れ:
+
+1. PWAをHTTPSで公開する
+2. Chrome DevTools Lighthouse でPWA要件を確認する
+3. BubblewrapなどでTWAプロジェクトを生成する
+4. Android App Bundleを署名してGoogle Play Consoleへ登録する
