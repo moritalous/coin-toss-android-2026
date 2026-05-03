@@ -5,6 +5,8 @@ output/
 android/android.keystore
 android/app-release-signed.apk
 android/app-release-bundle.aab
+android/app-release-unsigned-aligned.apk
+android/build/
 android/app/build/
 android/.gradle/
 /.gradle/
