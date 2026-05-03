@@ -5,9 +5,17 @@
   "description": "A simple coin toss PWA for Android publishing via Trusted Web Activity.",
   "scripts": {
     "start": "npx http-server . -p 4173 -c-1",
-    "serve": "npx http-server . -p 4173 -c-1"
+    "serve": "npx http-server . -p 4173 -c-1",
+    "twa:jdk-path": "mise where java",
+    "twa:setup:jdk": "mise exec -- node scripts/setup-bubblewrap-jdk.js",
+    "twa:doctor": "mise exec -- bubblewrap doctor",
+    "twa:init": "mise exec -- bubblewrap init --manifest=\"https://moritalous.github.io/coin-toss-android-2026/manifest.webmanifest\" --directory=\"android\"",
+    "twa:build": "mise exec -- bubblewrap build --manifest=\"android\"",
+    "twa:update": "mise exec -- bubblewrap update --manifest=\"android\"",
+    "twa:assetlinks": "mise exec -- bubblewrap fingerprint generateAssetLinks --manifest=\"android\" --output=\".well-known/assetlinks.json\""
   },
   "devDependencies": {
+    "@bubblewrap/cli": "^1.24.1",
     "http-server": "^14.1.1"
   }
 }

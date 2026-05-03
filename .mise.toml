@@ -1,0 +1,3 @@
+[tools]
+# Bubblewrap currently requires JDK 17 for Android command line tools compatibility.
+java = "temurin-17"

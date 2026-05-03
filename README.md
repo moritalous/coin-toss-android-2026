@@ -32,6 +32,33 @@ npm start
 
 デプロイ状況はGitHubの Actions タブで確認できます。
 
+## TWA / Bubblewrap
+
+JDKは `mise` で管理します。BubblewrapはAndroid command line toolsとの互換性上、JDK 17を要求するため、このリポジトリではTemurin 17を指定しています。
+
+```powershell
+mise install
+npm install
+npm run twa:setup:jdk
+npm run twa:doctor
+```
+
+Androidプロジェクト生成:
+
+```powershell
+npm run twa:init
+```
+
+生成後の主なコマンド:
+
+```powershell
+npm run twa:build
+npm run twa:update
+npm run twa:assetlinks
+```
+
+`twa:assetlinks` は `.well-known/assetlinks.json` を生成します。生成後にGitHub Pagesへ反映すると、TWAのDigital Asset Links確認に使われます。
+
 ## Google Play公開の想定
 
 このリポジトリはPWA本体です。Google Playへ出す場合は、公開済みHTTPS URLを用意したうえで Trusted Web Activity として Android アプリ化します。
