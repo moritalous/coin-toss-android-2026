@@ -10,9 +10,9 @@
     "twa:setup:jdk": "mise exec -- node scripts/setup-bubblewrap-jdk.js",
     "twa:doctor": "mise exec -- bubblewrap doctor",
     "twa:init": "mise exec -- bubblewrap init --manifest=\"https://moritalous.github.io/coin-toss-android-2026/manifest.webmanifest\" --directory=\"android\"",
-    "twa:build": "mise exec -- bubblewrap build --manifest=\"android\"",
-    "twa:update": "mise exec -- bubblewrap update --manifest=\"android\"",
-    "twa:assetlinks": "mise exec -- bubblewrap fingerprint generateAssetLinks --manifest=\"android\" --output=\".well-known/assetlinks.json\""
+    "twa:build": "mise exec -- bubblewrap build --manifest=\"android/twa-manifest.json\"",
+    "twa:update": "mise exec -- bubblewrap update --manifest=\"android/twa-manifest.json\"",
+    "twa:assetlinks": "mise exec -- bubblewrap fingerprint generateAssetLinks --manifest=\"android/twa-manifest.json\" --output=\".well-known/assetlinks.json\""
   },
   "devDependencies": {
     "@bubblewrap/cli": "^1.24.1",

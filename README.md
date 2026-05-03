@@ -59,6 +59,8 @@ npm run twa:assetlinks
 
 `twa:assetlinks` は `.well-known/assetlinks.json` を生成します。生成後にGitHub Pagesへ反映すると、TWAのDigital Asset Links確認に使われます。
 
+初回ビルド時にAndroid SDKライセンス確認が表示されたら、内容を確認して `y` で承諾します。
+
 ## Google Play公開の想定
 
 このリポジトリはPWA本体です。Google Playへ出す場合は、公開済みHTTPS URLを用意したうえで Trusted Web Activity として Android アプリ化します。
