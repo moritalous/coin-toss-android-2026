@@ -33,7 +33,6 @@ jobs:
           mkdir _site
           cp index.html styles.css app.js manifest.webmanifest sw.js _site/
           cp -R icons _site/icons
-          if [ -d .well-known ]; then cp -R .well-known _site/.well-known; fi
           touch _site/.nojekyll
 
       - name: Upload artifact

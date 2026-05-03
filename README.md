@@ -62,6 +62,14 @@ npm run twa:assetlinks
 
 `twa:assetlinks` は `.well-known/assetlinks.json` を生成します。生成後にGitHub Pagesへ反映すると、TWAのDigital Asset Links確認に使われます。
 
+GitHub Pagesのプロジェクトサイトを使う場合でも、Digital Asset Linksはホスト直下に必要です。このアプリのホストは `moritalous.github.io` なので、実際に検証されるURLは次です。
+
+```text
+https://moritalous.github.io/.well-known/assetlinks.json
+```
+
+`https://moritalous.github.io/coin-toss-android-2026/.well-known/assetlinks.json` ではTWA検証に使われません。生成した内容は `moritalous/moritalous.github.io` リポジトリ側にも配置します。
+
 初回ビルド時にAndroid SDKライセンス確認が表示されたら、内容を確認して `y` で承諾します。
 
 ## Google Play公開の想定
