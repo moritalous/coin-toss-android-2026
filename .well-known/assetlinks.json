@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.moritalous.coin_toss_android_2026",
+        "sha256_cert_fingerprints": ["22:1A:08:9F:99:57:37:3A:60:B0:31:BA:0F:AD:64:C6:54:A0:47:F3:F6:4A:41:B3:0E:BF:37:F9:F0:E0:5F:72"]
+      }
+    }]
