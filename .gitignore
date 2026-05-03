@@ -7,3 +7,17 @@ android/app-release-signed.apk
 android/app-release-bundle.aab
 android/app/build/
 android/.gradle/
+/.gradle/
+/app/
+/build/
+/build.gradle
+/gradle.properties
+/gradle/
+/gradlew
+/gradlew.bat
+/manifest-checksum.txt
+/settings.gradle
+/store_icon.png
+/app-release-unsigned-aligned.apk
+/app-release-signed.apk
+/app-release-bundle.aab

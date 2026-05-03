@@ -62,6 +62,8 @@ npm run twa:assetlinks
 
 `twa:assetlinks` は `.well-known/assetlinks.json` を生成します。生成後にGitHub Pagesへ反映すると、TWAのDigital Asset Links確認に使われます。
 
+Bubblewrapのbuild/update/fingerprint系コマンドはnpm script内で `android/` に移動して実行します。`android/twa-manifest.json` の `signingKey.path` は `android.keystore` のままにします。
+
 GitHub Pagesのプロジェクトサイトを使う場合でも、Digital Asset Linksはホスト直下に必要です。このアプリのホストは `moritalous.github.io` なので、実際に検証されるURLは次です。
 
 ```text
